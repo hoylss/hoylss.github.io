@@ -1,0 +1,100 @@
+Options:
+    perm-main: server.staff 
+    perm-whitelist: server.whitelist
+    perm-gm: gamemode.server
+    perm-bc: staff.broadcast
+
+command /staff:
+    permission: {@perm-main}
+    trigger:
+        open chest with 6 rows named "&b&lStaff GUI" to player
+        wait 3 ticks
+        format slot 0 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 1 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 2 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 3 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 4 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 5 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 6 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 7 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 8 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 9 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 10 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 11 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 12 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 13 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 14 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 15 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 16 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 17 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 18 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 19 of player with emerald named "&a&lWhite&b&llist" to close then run [execute player command "whitelistgui"]
+        format slot 20 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 21 of player with diamond named "&a&lGame&b&lmodes" to close then run [execute player command "gamemodegui"]
+        format slot 22 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 23 of player with diamond named "&a&lBroad&b&lcast" to close then run [execute player command "bcgui"]
+        format slot 24 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 25 of player with diamond named "&a&lList &b&lPlugins" to close then run [execute player command "plugin"]
+        format slot 26 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 27 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 28 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 29 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 30 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 31 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 32 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 33 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 34 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 35 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 36 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 37 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 38 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 39 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 40 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 41 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 42 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 43 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 44 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 45 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 46 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 47 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 48 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 49 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 50 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 51 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 52 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 53 of player with blue stained glass pane named "&f" to be unstealable
+
+command /whitelistgui:
+    permission: {@perm-whitelist}
+    trigger:
+        open chest with 1 rows named "&b&lWhitelist GUI" to player
+        wait 3 ticks
+        format slot 0 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 1 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 2 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 3 of player with diamond named "&b&lTurn &a&lON" to close then run [execute player command "whitelist on"]
+        format slot 4 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 5 of player with diamond named "&b&lTurn &c&lOFF" to close then run [execute player command "whitelist off"]
+        format slot 6 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 7 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 8 of player with blue stained glass pane named "&f" to be unstealable
+
+command /gamemodegui:
+    permission: {@perm-gm}
+    trigger:
+        open chest with 1 rows named "&b&lGamemode GUI" to player
+        wait 3 ticks
+        format slot 0 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 1 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 2 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 3 of player with diamond named "&c&lSurvival" to close then run [execute player command "gamemode surivial"]
+        format slot 3 of player with diamond named "&c&lCreative" to close then run [execute player command "gamemode creative"]
+        format slot 5 of player with diamond named "&c&lSpectator" to close then run [execute player command "gamemode spectator"]
+        format slot 6 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 7 of player with blue stained glass pane named "&f" to be unstealable
+        format slot 8 of player with blue stained glass pane named "&f" to be unstealable
+
+command /bcgui:
+    permission: {@perm-bc}
+    trigger:
+        send "&8&lComing soon..."
